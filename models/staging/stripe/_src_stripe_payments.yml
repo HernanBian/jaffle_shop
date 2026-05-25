@@ -1,0 +1,21 @@
+sources:
+  - name: stripe
+    tables:
+      - name: payment
+
+models:
+  - name: stg_stripe__payments
+    description: successful stripe payment records for customer orders.
+    columns:
+      - name: payment_id
+        description: unique identifier for the payment.
+      - name: order_id
+        description: identifier for the order associated with the payment.
+      - name: payment_method
+        description: payment method used to complete the transaction.
+      - name: status
+        description: final status of the payment.
+      - name: amount
+        description: payment amount charged to the customer.
+      - name: created_at
+        description: timestamp when the payment was created.

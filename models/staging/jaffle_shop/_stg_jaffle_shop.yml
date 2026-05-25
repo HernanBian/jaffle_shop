@@ -3,7 +3,7 @@ models:
     description: customer records from jaffle shop
     columns:
       - name: customer_id
-        description: unique identifier for a customer
+        description: unique identifier for a customer; primary key for customers table
         data_tests:
           - unique
           - not_null
